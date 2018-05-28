@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout2">
+
+    <ImageView
+        style="@style/BackGroundImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/img" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold|italic"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="118dp"
+        android:text="Title"
+        android:textSize="30sp"
+        android:id="@+id/s_title"
+        android:textColor="#000000"
+
+        />
+
+
+    <TextView
+        android:id="@+id/s_rd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:text="Release Date:"
+        android:layout_marginTop="280dp"
+        android:textColor="#000000"
+        android:textSize="15dp"
+
+        />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:text="Release Date : "
+        android:layout_marginTop="280dp"
+        android:textColor="#000000"
+        android:textSize="15dp"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/s_desp"
+        android:layout_below="@+id/s_rd"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:textSize="15dp"
+        android:layout_marginTop="50dp"
+        android:text="Description"
+        android:textColor="#000000"
+        android:scrollbars="vertical"
+
+        android:lineSpacingExtra="3.5dp"
+        android:textAlignment="center"
+        />
+</RelativeLayout>

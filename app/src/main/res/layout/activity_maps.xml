@@ -1,0 +1,102 @@
+<!--fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.raj.cinemaproject.MapsActivity" /-->
+
+
+<RelativeLayout
+
+android:layout_width="match_parent"
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_height="match_parent"
+    android:background="@drawable/backround">
+
+
+
+
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    tools:context="com.example.raj.cinemaproject.MapsActivity"
+    android:layout_alignParentBottom="true"
+
+    />
+
+    <TextView
+        android:id="@+id/first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText3"
+        android:layout_alignEnd="@+id/date_picker"
+        android:layout_alignRight="@+id/date_picker"
+        android:layout_marginEnd="54dp"
+        android:layout_marginRight="54dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="0dp"
+        android:text="Location :"
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_above="@+id/date_picker"
+        android:layout_alignLeft="@+id/first"
+        android:layout_alignStart="@+id/first"
+        android:layout_marginBottom="29dp"
+        android:background="#00000000"
+        android:focusable="false"
+        android:padding="5dp"
+        android:paddingTop="5dp"
+
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/date_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_above="@+id/B_hopistals"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="69dp"
+        android:text="SELECT DATE" />
+
+
+    <Button
+        android:id="@+id/B_hopistals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="208dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp"
+        android:onClick="onClick"
+        android:text="Find Cinemas" />
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone" />
+
+
+
+
+</RelativeLayout>
+
+
